@@ -1,0 +1,49 @@
+{
+  "name": "whitespace-se/matomo-core-installer",
+  "description": "A custom installer to handle deploying matomo with composer",
+  "keywords": [
+    "matomo"
+  ],
+  "type": "composer-plugin",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "authors": [{
+      "name": "John P. Bloch",
+      "email": "me@johnpbloch.com"
+    },
+    {
+      "name": "Whitespace Dev",
+      "email": "code@whitespace.se"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "whitespacese\\Composer\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\whitespacese\\Composer\\": "tests/"
+    }
+  },
+  "extra": {
+    "class": "whitespacese\\Composer\\MatomoCorePlugin"
+  },
+  "require": {
+    "composer-plugin-api": "^1.0"
+  },
+  "require-dev": {
+    "composer/composer": "^1.0",
+    "phpunit/phpunit": ">=4.8.35"
+  },
+  "conflict": {
+    "composer/installers": "<1.0.6"
+  },
+  "scripts": {
+    "test:phpunit": "phpunit",
+    "test": [
+      "@test:phpunit"
+    ]
+  }
+}
