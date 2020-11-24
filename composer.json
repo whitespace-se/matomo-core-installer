@@ -31,11 +31,11 @@
     "class": "whitespacese\\Composer\\MatomoCorePlugin"
   },
   "require": {
-    "composer-plugin-api": "^1.0"
+    "composer-plugin-api": "^1.0 || ^2.0"
   },
   "require-dev": {
-    "composer/composer": "^1.0",
-    "phpunit/phpunit": ">=4.8.35"
+    "composer/composer": "^1.0 || ^2.0",
+    "phpunit/phpunit": ">=7.2.5"
   },
   "conflict": {
     "composer/installers": "<1.0.6"
