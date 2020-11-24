@@ -11,7 +11,7 @@ To set up a custom Matomo core package to use this custom installer, add the fol
 ```json
 "type": "matomo-core",
 "require": {
-	"whitespac-ese/matomo-core-installer": "^1.0"
+	"whitespac-ese/matomo-core-installer": "^2.0"
 }
 ```
 
