@@ -1,0 +1,32 @@
+{
+  "name": "whitespace-se/matomo-core-installer",
+  "packageName": "matomo-core-installer",
+  "version": "1.0",
+  "description": "A custom installer for Matomo Core. Similar to what is available for wordpress",
+  "keywords": [
+    "matomo",
+    "installer"
+  ],
+  "type": "composer-plugin",
+  "license": "AGPL-3.0-or-later",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "Johan Westin",
+      "email": "johan.westin@whitespace.se"
+    }
+  ],
+  "require": {
+    "composer-plugin-api": "^2.0",
+    "php": ">=8.1"
+  },
+  "autoload": {
+    "psr-0": {
+      "whitespace\\Composer\\": "src/"
+    }
+  },
+  "extra": {
+    "class": "whitespace\\Composer\\MatomoCorePlugin"
+  }
+}
